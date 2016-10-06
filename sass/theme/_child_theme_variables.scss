@@ -6,10 +6,27 @@
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
 
-$brand-primary:         #fece00; //#ff6d5a
+$brand-primary:         #fd5d83;
 
 // Basics of a navbar
 $navbar-height:                    60px;
 $navbar-margin-bottom:             0px;
 $navbar-border-radius:             0px;
+
+// Typography
+$font-family-sans-serif: "Helvetica Neue", Roboto, Arial, sans-serif;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:       $font-family-sans-serif;
+$font-family-title:      "Roboto Condensed";
+
+$font-size-h1: 3rem !default;
+$font-size-h2: 2.5rem !default;
+$font-size-h3: 2rem !default;
+$font-size-h4: 1.75rem !default;
+$font-size-h5: 1.5rem !default;
+$font-size-h6: 1.25rem !default;
+
+$link-hover-decoration: none;
+$font-size-root: 14px;
 
