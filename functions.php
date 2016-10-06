@@ -1,4 +1,7 @@
 <?php
+
+add_theme_support('custom-logo');
+
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );

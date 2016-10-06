@@ -9231,3 +9231,14 @@ h1.navbar-brand a:hover {
 
 .gallery-caption {
   display: block; }
+
+.home article, .archive article {
+  width: 30%;
+  display: inline-block; }
+
+@media (max-width: 575px) {
+  .home article, .archive article {
+    width: 100%; } }
+
+.site-info {
+  display: none; }

@@ -1,0 +1,15 @@
+.home, .archive {
+    article {
+        width: 30%;
+        display: inline-block;
+    }
+    @include media-breakpoint-down(xs) {
+        article {
+            width: 100%;
+        }
+    }
+}
+
+.site-info {
+    display: none;
+}
