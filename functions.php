@@ -52,6 +52,5 @@ function my_child_theme_setup() {
 add_action( 'after_setup_theme', 'my_child_theme_setup' );
 
 function maf_all_excerpts_get_more_link($post_excerpt) {
-    return $post_excerpt . '...<p><a class="btn btn-secondary understrap-read-more-link" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More...', 'understrap')  . '</a></p>';
+    return $post_excerpt . '...';
 }
-
