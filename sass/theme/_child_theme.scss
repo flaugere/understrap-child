@@ -1,3 +1,34 @@
+#wrapper-navbar nav.navbar-dark{
+	background-image: url(http://musculationaufeminin.com/wp-content/uploads/2016/06/x-bg-maze.png);
+	background-color: transparent;
+}
+a.navbar-brand img{
+	width:250px;
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+.navbar-dark .navbar-toggle {
+    border: 1px solid $brand-primary;
+	background-color: $brand-primary;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: $brand-primary;
+	text-transform: uppercase;
+	font-family: $font-family-tiny;
+	font-size:1.1rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: darken($brand-primary,20);
+}
+.navbar #main-menu{
+	float:right;
+}
+@include media-breakpoint-down(xs) {
+    .navbar #main-menu{
+		float:left;
+	}
+}
 .home, .archive {
     article {
         width: 30%;
@@ -5,6 +36,7 @@
         display: inline-block;
 		vertical-align:top;
 		font-size:12px;
+		font-family:$font-family-tiny;
     }
 	article h2.entry-title{
         font-size:18px;
@@ -97,16 +129,6 @@ h2.comments-title{
 	color: #fff;
 	box-sizing: border-box;
 }
-.x-author-box .h-about-the-author {
-    margin: 0 0 0.925em;
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 0.45em;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #aaa;
-}
 .x-author-box{
 	.avatar {
 		float: left;
@@ -117,6 +139,17 @@ h2.comments-title{
 	}
 	.p-author {
 		font-size:12px;
+		font-family:$font-family-tiny;
+	}
+	.h-about-the-author {
+		margin: 0 0 0.925em;
+		border-bottom: 1px solid #e5e5e5;
+		padding-bottom: 0.45em;
+		font-size: 12px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: #aaa;
 	}
 } 
 /* Comments */

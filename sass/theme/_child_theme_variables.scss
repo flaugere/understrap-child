@@ -14,11 +14,12 @@ $navbar-margin-bottom:             0px;
 $navbar-border-radius:             0px;
 
 // Typography
-$font-family-sans-serif: "Helvetica Neue", Roboto, Arial, sans-serif;
+$font-family-sans-serif: Lato, Roboto, Arial, sans-serif;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:       $font-family-sans-serif;
 $font-family-title:      "Roboto Condensed";
+$font-family-tiny:       "Source Sans Pro", Lato, Roboto, Arial, sans-serif;
 
 $font-size-h1: 3rem !default;
 $font-size-h2: 2.5rem !default;
