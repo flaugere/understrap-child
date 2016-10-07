@@ -54,3 +54,4 @@ add_action( 'after_setup_theme', 'my_child_theme_setup' );
 function maf_all_excerpts_get_more_link($post_excerpt) {
     return $post_excerpt . '...';
 }
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
