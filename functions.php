@@ -24,7 +24,7 @@ function theme_enqueue_styles() {
 }
 
 function load_fonts() {
-    wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700|Lato:400,700|Source+Sans+Pro:400,700');
+    wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Lato:400,700|Source+Sans+Pro:400,700|Montserrat:400,700');
     wp_enqueue_style( 'googleFonts');
 }
 add_action('wp_print_styles', 'load_fonts');

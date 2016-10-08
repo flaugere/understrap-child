@@ -6,7 +6,10 @@
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
 
-$brand-primary:         #fd5d83;
+$brand-primary:         #fd5d83; //fd5d83
+$brand-secondary:       #969696;
+$brand-blue:            #23475B;
+$brand-green:           #1bbe9f;
 
 // Basics of a navbar
 $navbar-height:                    60px;
@@ -14,12 +17,13 @@ $navbar-margin-bottom:             0px;
 $navbar-border-radius:             0px;
 
 // Typography
-$font-family-sans-serif: Lato, Roboto, Arial, sans-serif;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif;
+$font-family-sans-serif: Lato, Arial, sans-serif;
+$font-family-serif:      Georgia, serif;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:       $font-family-sans-serif;
-$font-family-title:      "Roboto Condensed";
-$font-family-tiny:       "Source Sans Pro", Lato, Roboto, Arial, sans-serif;
+$font-family-title:      "Montserrat";
+$font-family-title2:     "Roboto Condensed";
+$font-family-tiny:       "Source Sans Pro", Lato, Arial, sans-serif;
 
 $font-size-h1: 3rem !default;
 $font-size-h2: 2.5rem !default;
