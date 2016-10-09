@@ -55,3 +55,17 @@ function maf_all_excerpts_get_more_link($post_excerpt) {
     return $post_excerpt . '...';
 }
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
+
+// Hook Woocomerce pour le footer
+function action_woocommerce_after_main_content($woocommerce_output_content_wrapper_end) {
+    echo '</div></div></div>';
+}
+add_action( 'woocommerce_after_main_content', 'action_woocommerce_after_main_content', 10 );
+
+// Hook title category
+add_filter('get_the_archive_title', function ($title) {
+    if (is_category()) {
+        $title = single_cat_title('', false );
+    }
+    return $title;
+});
