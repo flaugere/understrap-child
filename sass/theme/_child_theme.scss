@@ -54,6 +54,9 @@ a:hover{
 .navbar-dark .navbar-nav .nav-link:hover {
     color: $brand-primary;
 }
+.navbar-nav .active > .nav-link {
+    color: $brand-primary!important;
+}
 .navbar #main-menu{
 	float:right;
 }
@@ -95,6 +98,13 @@ a:hover{
 		margin-bottom:10px;
 		background:white;
 	}
+}
+.widget-area img{
+	border: 2px solid #e5e5e5;
+	padding: 6px;
+	margin-top:10px;
+	margin-bottom:10px;
+	background:white;
 }
 .site-info {
     display: none;
@@ -499,4 +509,74 @@ span.woocommerce-Price-amount{
     box-shadow: none;
 	margin-top:0px;
 }
+.x-content-band {
+    margin: 0 0 1.5em;
+    padding: 20px!important;
+}
+.fb_iframe_widget{
+	margin-bottom:20px;
+	margin-top:10px;
+}
+/* Icon sur le menu */
+#menu-item-5665 {
+    a{
+		width:0px;
+        visibility: hidden;
+        &:before{
+            visibility: visible;
+            @include fa-icon;
+            @extend .fa;
+            @extend .fa-sign-out:before;
+        }
+    }
 
+    @include media-breakpoint-down(xs) {
+        a{
+			width:auto;
+            visibility: visible;
+            &:before{
+                visibility: hidden;
+                content:""
+            }
+        }
+    }
+}
+#menu-item-5668 {
+    a{
+		width:0px;
+        visibility: hidden;
+        &:before{
+            visibility: visible;
+            @include fa-icon;
+            @extend .fa;
+            @extend .fa-shopping-cart:before;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        a{
+			width:auto;
+            visibility: visible;
+            &:before{
+                visibility: hidden;
+                content:""
+            }
+        }
+    }
+}
+/* Footer */
+#wrapper-footer-full, #wrapper-static-hero {
+    background-color: $brand-blue;
+	color: white;
+	border-top: solid 5px $brand-primary;
+	overflow:hidden;
+	a{
+		color: white;
+	}
+	a:hover{
+		color: $brand-primary;
+	}
+}
+#wrapper-footer{
+	display: none;
+}
