@@ -11,6 +11,7 @@ a.navbar-brand img{
 	width:250px;
 	border:0px;
 	margin:0px;
+	margin-top:2px;
 	padding:0px;
 	background:transparent;
 }
@@ -31,7 +32,7 @@ a.navbar-brand img{
 		margin-left: 0px;
 	}
 	ul.navbar-nav{
-		margin-top:12px;
+		margin-top:14px;
 	}
 }
 a:hover{
@@ -565,18 +566,36 @@ span.woocommerce-Price-amount{
     }
 }
 /* Footer */
-#wrapper-footer-full, #wrapper-static-hero {
+#wrapper-footer-full {
     background-color: $brand-blue;
 	color: white;
 	border-top: solid 5px $brand-primary;
-	overflow:hidden;
 	a{
 		color: white;
 	}
 	a:hover{
 		color: $brand-primary;
 	}
+	ul{
+		list-style: none;
+		padding:0px;
+	}
+	li{
+		float:none;
+		display:block;
+		font-family:$font-family-title;
+	}
+	h3.widget-title{
+		border-bottom:solid 3px $brand-green;
+		padding-bottom:5px;
+		margin-bottom:10px;
+	}
+	.textwidget{
+		font-family:$font-family-tiny;
+		margin-top:10px;
+	}
 }
 #wrapper-footer{
 	display: none;
 }
+
