@@ -49,7 +49,7 @@ a:hover{
     color: white;
 	text-transform: uppercase;
 	font-family: $font-family-title;
-	font-size:13px; 
+	font-size:13px;
 	font-weight:normal;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -66,7 +66,7 @@ a:hover{
 		float:left;
 	}
 }
-.home, .archive {
+.home, .archive, .search {
     article {
         width: 30%;
 		margin-right:2%;
@@ -248,7 +248,7 @@ h2.comments-title{
 		text-transform: uppercase;
 		color: #aaa;
 	}
-} 
+}
 /* Comments */
 #comments {
 	ol.comment-list{
@@ -598,4 +598,8 @@ span.woocommerce-Price-amount{
 #wrapper-footer{
 	display: none;
 }
-
+#searchform{
+    .btn {
+        padding: 6px 14px;
+    }
+}
