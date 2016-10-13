@@ -20,7 +20,7 @@
 
 	</header><!-- .entry-header -->
 
-       <?php echo sprintf('<a href="%s" rel="bookmark">%s</a>', esc_url(get_permalink()), get_the_post_thumbnail( $post->ID, 'large' )); ?>
+       <?php echo sprintf('<a href="%s" rel="bookmark">%s</a>', esc_url(get_permalink()), get_the_post_thumbnail( $post->ID, 'medium' )); ?>
 
 		<div class="entry-content">
 
