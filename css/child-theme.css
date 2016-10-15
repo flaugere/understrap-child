@@ -7187,7 +7187,6 @@ a.navbar-brand img {
   width: 250px;
   border: 0px;
   margin: 0px;
-  margin-top: 5px;
   padding: 0px;
   background: transparent; }
 
@@ -7205,7 +7204,7 @@ a.navbar-brand img {
   ul.dropdown-menu li.nav-item {
     margin-left: 0px; }
   ul.navbar-nav {
-    margin-top: 17px; } }
+    margin-top: 12px; } }
 
 a:hover {
   color: #23475B; }
@@ -7675,8 +7674,9 @@ span.woocommerce-Price-amount {
 /* Icon sur le menu */
 #menu-item-5665 a {
   width: 0px;
+  height: 0px;
   font-size: 16px;
-  margin-top: -3px;
+  margin-top: -2px;
   visibility: hidden; }
   #menu-item-5665 a:before {
     visibility: visible;
@@ -7690,6 +7690,9 @@ span.woocommerce-Price-amount {
 @media (max-width: 543px) {
   #menu-item-5665 a {
     width: auto;
+    height: auto;
+    margin-top: 0px;
+    font-size: 13px;
     visibility: visible; }
     #menu-item-5665 a:before {
       visibility: hidden;
@@ -7697,8 +7700,9 @@ span.woocommerce-Price-amount {
 
 #menu-item-5668 a {
   width: 20px;
+  height: 0px;
   font-size: 16px;
-  margin-top: -3px;
+  margin-top: -2px;
   visibility: hidden; }
   #menu-item-5668 a:before {
     visibility: visible;
@@ -7712,6 +7716,9 @@ span.woocommerce-Price-amount {
 @media (max-width: 543px) {
   #menu-item-5668 a {
     width: auto;
+    height: auto;
+    margin-top: 0px;
+    font-size: 13px;
     visibility: visible; }
     #menu-item-5668 a:before {
       visibility: hidden;
@@ -7719,6 +7726,7 @@ span.woocommerce-Price-amount {
 
 #menu-item-5678 a {
   width: 20px;
+  height: 0px;
   font-size: 16px;
   margin-top: -2px;
   visibility: hidden; }
@@ -7734,6 +7742,9 @@ span.woocommerce-Price-amount {
 @media (max-width: 543px) {
   #menu-item-5678 a {
     width: auto;
+    height: auto;
+    font-size: 13px;
+    margin-top: 0px;
     visibility: visible; }
     #menu-item-5678 a:before {
       visibility: hidden;
