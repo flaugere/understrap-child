@@ -1,4 +1,19 @@
 <?php
+add_action('wp_head', 'tracker_mailchimp');
+
+function tracker_mailchimp()
+{
+?>
+<script type="text/javascript">
+    var $mcGoal = {'settings':{'uuid':'f734e235a937fbb3234f8b4a3','dc':'us9'}};
+    (function() {
+                 var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+                        sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+                            })(); 
+    </script>
+<?php
+}
 
 add_theme_support('custom-logo');
 
