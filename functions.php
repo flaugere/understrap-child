@@ -106,3 +106,39 @@ function theme_slug_widgets_init()
         'after_title' => '</h3>',
     ]);
 }
+
+/*
+ * Custom login page
+ */
+function my_login_logo_css() { ?>
+    <style type="text/css">
+    #login h1 img {
+        width: 100%;
+    }
+    #login {
+        padding-top: 4% !important;
+    }
+    form#loginform{
+        border: 5px solid #fd5d83; 
+    }
+    body {
+        background: #23475b !important;
+    }
+    .login #backtoblog a, .login #nav a, .login h1 a {
+        color: white !important;
+    }
+    .login.wp-core-ui .button-primary ,
+    .login.wp-core-ui .button-primary:hover{
+        background: #fc2b5c;
+        border-color: #fc2b5c;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    #woo-slg-social-container-login legend ,
+    #woo-slg-social-container-login a{
+        color: white;
+    }
+    </style>
+<?php 
+}
+add_action( 'login_enqueue_scripts', 'my_login_logo_css' );
