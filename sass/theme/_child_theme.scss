@@ -5,7 +5,11 @@ body{
 #wrapper-navbar nav.navbar-dark{
 	/*background-image: url(http://musculationaufeminin.com/wp-content/uploads/2016/06/x-bg-maze.png);*/
 	background-color: $brand-blue!important;
-	border-bottom:solid 5px $brand-primary;
+	/*border-bottom:solid 5px $brand-primary;*/
+}
+#wrapper-navbar nav.navbar-custom{
+	/*background-image: url(http://musculationaufeminin.com/wp-content/uploads/2016/06/x-bg-maze.png);*/
+	background-color: $brand-primary!important;
 }
 a.navbar-brand img{
 	width:250px;
@@ -33,6 +37,9 @@ a.navbar-brand img{
 	ul.navbar-nav{
 		margin-top:12px;
 	}
+	.navbar-custom ul.navbar-nav{
+		margin-top:0px;
+	}
 }
 a:hover{
 	color: $brand-blue;
@@ -57,11 +64,32 @@ a:hover{
 .navbar-nav .active > .nav-link {
     color: $brand-primary!important;
 }
-.navbar #main-menu{
+.navbar-custom .navbar-nav .active > .nav-link {
+    color: $brand-blue!important;
+}
+.navbar #main-menu, .navbar #sub-main-menu{
 	float:right;
 }
+.navbar-custom .navbar-toggle {
+    border: 1px solid $brand-primary;
+	background-color: $brand-primary;
+}
+.navbar-toggler{
+	background:white;
+	float:right;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+	text-transform: uppercase;
+	font-family: $font-family-title;
+	font-size:12px;
+	font-weight:normal;
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: $brand-blue;
+}
 @include media-breakpoint-down(xs) {
-    .navbar #main-menu{
+    .navbar #main-menu, .navbar #sub-main-menu{
 		float:left;
 	}
 }
