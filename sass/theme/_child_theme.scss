@@ -1,5 +1,8 @@
+html {
+    font-size: 14px;
+}
 body{
-	background-image: url(http://musculationaufeminin.com/wp-content/uploads/2016/06/x-bg-maze.png);
+	background-image: url(/wp-content/uploads/2016/06/x-bg-maze.png);
 	background-color: transparent;
 }
 #wrapper-navbar nav.navbar-dark{
@@ -17,6 +20,7 @@ a.navbar-brand img{
 	margin:0px;
 	padding:0px;
 	background:transparent;
+	max-width: none;
 }
 @include media-breakpoint-down(xs) {
 	a.navbar-brand img{
@@ -35,7 +39,7 @@ a.navbar-brand img{
 		margin-left: 0px;
 	}
 	ul.navbar-nav{
-		margin-top:12px;
+		margin-top:Opx;
 	}
 	.navbar-custom ul.navbar-nav{
 		margin-top:0px;
@@ -67,16 +71,15 @@ a:hover{
 .navbar-custom .navbar-nav .active > .nav-link {
     color: $brand-blue!important;
 }
-.navbar #main-menu, .navbar #sub-main-menu{
-	float:right;
-}
 .navbar-custom .navbar-toggle {
     border: 1px solid $brand-primary;
 	background-color: $brand-primary;
 }
 .navbar-toggler{
-	background:white;
-	float:right;
+	background: white;
+	float: right;
+        font-size: 1em;
+        margin-top: .5rem;
 }
 .navbar-custom .navbar-nav .nav-link {
     color: white;
@@ -88,10 +91,13 @@ a:hover{
 .navbar-custom .navbar-nav .nav-link:hover {
     color: $brand-blue;
 }
-@include media-breakpoint-down(xs) {
-    .navbar #main-menu, .navbar #sub-main-menu{
-		float:left;
-	}
+@include media-breakpoint-down(md) {
+    .navbar-dark .navbar-toggler {
+    }
+    .navbar .container{ 
+        margin: 0px;
+        padding: 0px;
+    }
 }
 .blog, .archive, .search {
     article {
@@ -378,6 +384,11 @@ input[type="radio"], input[type="checkbox"] {
 }
 .x-section .x-container.width {
     width: 100%!important;
+}
+#woocommerce-wrapper div[itemprop=description] {
+    background: none;
+    border: 0;
+    font-size: 1em;
 }
 .woocommerce div.product p.price, .woocommerce div.product span.price {
     color: $brand-green;
@@ -895,3 +906,11 @@ span.woocommerce-Price-amount{
 		width: 20%;
 	}
 }
+
+/**
+ * Fix menu suite migration bootstrap 4
+ */
+.navbar-nav .nav-item + .nav-item {
+    margin-left: 0;
+}
+

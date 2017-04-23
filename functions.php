@@ -4,14 +4,14 @@ add_action('wp_head', 'tracker_mailchimp');
 function tracker_mailchimp()
 {
 ?>
-<script type="text/javascript">
+    <script type="text/javascript">
     var $mcGoal = {'settings':{'uuid':'f734e235a937fbb3234f8b4a3','dc':'us9'}};
     (function() {
-                 var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
-                        sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
-                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
-                            })(); 
-    </script>
+        var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+        sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+})(); 
+</script>
 <?php
 }
 
@@ -32,11 +32,11 @@ add_action('wp_enqueue_scripts', 'understrap_remove_scripts', 20);
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
 
-	// Get the theme data
-	$the_theme = wp_get_theme();
+    // Get the theme data
+    $the_theme = wp_get_theme();
 
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get( 'Version' ) );
-        wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
+    wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
 }
 
 function load_fonts()
@@ -106,6 +106,18 @@ function theme_slug_widgets_init()
         'after_title' => '</h3>',
     ]);
 }
+
+// Sidebar supprimé suite migration
+register_sidebar( array(
+    'name'          => __( 'Sidebar', 'understrap' ),
+    'id'            => 'sidebar-1',
+    'description'   => 'Sidebar widget area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+) );
+
 
 /*
  * Custom login page
