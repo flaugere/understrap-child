@@ -154,3 +154,6 @@ function my_login_logo_css() { ?>
 <?php 
 }
 add_action( 'login_enqueue_scripts', 'my_login_logo_css' );
+
+// Défini à 640px dans le parent
+$content_width = 1024;
