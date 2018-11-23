@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<nav class="navbar navbar-toggleable-lg navbar-dark bg-dark">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container" onclick="if (jQuery('.navbar-toggler').is(':visible')) {jQuery('.navbar-collapse').toggle().toggleClass('in');}">
@@ -58,8 +58,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} ?><!-- end custom logo -->
 
 				<button class="navbar-toggler" type="button">
-                                    <i class="fa fa-bars" aria-hidden="true"></i> Menu
-                                </button>
+                    <i class="fa fa-bars" aria-hidden="true"></i> Menu
+                </button>
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
-		<nav class="navbar navbar-custom site-navigation navbar-toggleable-md" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+		<nav class="navbar navbar-custom site-navigation navbar-toggleable-lg" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                     <div class="container">
                         <?php wp_nav_menu(
                                 array(
